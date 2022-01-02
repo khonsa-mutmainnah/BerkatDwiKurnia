@@ -1,0 +1,288 @@
+@font-face {
+    font-family: dodger;
+    src: url(dodger3_1title.ttf);
+}
+
+@font-face {
+    font-family: kollektif;
+    src: url(Kollektif.ttf);
+}
+
+.all{
+    font-family: montserrat, sans-serif;
+    font-size: 20px;
+    color: #2F3131;
+    background-image: url(./img/bkg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* navbar */
+.navbar-nav{
+    font-family: barlow, sans-serif;
+    color: black;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.navbar-nav li{
+    font-size: 10px;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+    font-family: dodger;
+}
+.nav-link{
+    margin-right: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: black;
+}
+
+.navbar-brand:hover, .nav-link:hover, .nab-item:hover, .navbar-brand:active, .nav-link:active, .nab-item:active{
+    color: white;
+}
+
+/* HOME */
+
+/* top */
+.jumbo{
+    position: relative;
+    text-align: center;
+}
+
+.jumbo::after{
+    content:' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+/* value */
+.value{
+    box-shadow: 0 3px 20px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    margin-top: 30px;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.value h5{
+    font-family: kollektif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+/* proyek */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+.judul{
+    font-family: kollektif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 60px;
+    letter-spacing: 5px;
+}
+
+.tombol{
+    background-color: #2F3131;
+    color: #E4E3DB;
+}
+
+.tombol:hover{
+    font-weight: 600;
+    color: #E4E3DB;
+}
+
+.proyek{
+    margin-top: -50px;
+}
+.card{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    background-color: white;
+    
+}
+
+.card h4{
+    font-family: kollektif;
+    text-transform: capitalize;
+}
+
+/* lini bisnis */
+.lini-bisnis p{
+    font-size: 13px;
+}
+
+.lini-bisnis h3{
+    font-family: kollektif;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 7px;
+    letter-spacing: 3px;
+}
+
+/* visi misi */
+.visi-misi li{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.visi-misi .teks{
+    font-weight: 500;
+    font-size: 20;
+}
+/* akhir visi misi */
+/* footer */
+.footer{
+    background-color: #2F3131;
+    color: #E4E3DB;
+    margin-top: 200px;
+    padding: 50px;
+}
+
+.profil p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.kontak{
+    text-align: right;
+}
+
+.kontak h3{
+    font-family: kollektif;
+    text-transform: uppercase;
+    font-size: 20;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.kontak h5{
+    text-transform: capitalize;
+    font-size: 10;
+    letter-spacing: 1px;
+}
+
+.kontak p{
+    font-size: 15px;
+}
+/* akhir HOME */
+
+/* project */
+.project .nav-link{
+    font-family: barlow;
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    color: antiquewhite;
+}
+
+.project .tab-pane h1{
+    font-size: 25px;
+    font-weight: 500;
+    font-family: kollektif;
+    text-transform: uppercase;
+}
+
+.project .tanya{
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.project .jawab{
+    font-weight: 300;
+    font-size: 15px;
+    text-transform: inherit;
+}
+/* akhir project */
+
+/* kategori */
+.kategori .carousel{
+    margin-top: 30px;
+}
+
+.kategori .jelas{
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: inherit;
+}
+/* akhir kategori */
+/* desktop ver */
+@media (min-width: 1199.98px) {
+
+    /* navbar */
+    .nav-link:hover::after{
+        content:'';
+        display: block;
+        border-bottom: 3px solid #E4E3DB;
+        width: 70%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .nav-link:active::after{
+        content:'';
+        display: block;
+        border-bottom: 3px solid #E4E3DB;
+        width: 70%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .navbar-nav{
+        font-family: barlow, sans-serif;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px;
+    }
+    
+    .navbar-nav li{
+        font-size: 20px;
+    }
+
+    .navbar-brand{
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    /* HOME */
+
+    /* top */
+    .carousel{
+        margin-top: -40px;
+    }
+
+    /* judul */
+    .judul{
+        font-family: barlow;
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 100px;
+        letter-spacing: 6px;
+    }
+
+    /* akhir HOME */
+
+
+}
